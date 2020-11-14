@@ -11,8 +11,11 @@ public class Url {
         return new Url(url);
     }
 
-    public boolean isResource() {
+    public boolean isEndsWith(String path) {
+        return url.endsWith(path);
+    }
 
-        return false;
+    public String getUrl() {
+        return url;
     }
 }
